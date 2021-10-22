@@ -8,7 +8,8 @@ Shop management create and products under various categories.
 <br>Customers can register in the system and add items to cart and checkout.
 
 ## How to Initialise
-
+To clone this repository to your machine
+`git clone https://github.com/Chamanthi12/GroupProject.git`
 
 
 ## Technology Used
@@ -25,5 +26,4 @@ Shop management create and products under various categories.
 
 
 
-To clone this
-git clone https://github.com/Chamanthi12/GroupProject.git
+
