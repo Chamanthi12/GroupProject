@@ -1,13 +1,13 @@
 from django.shortcuts import render
-from django.urls import path
+def store(request):
+     context = {}
+     return render(request, 'store/store.html', context)
 
-from . import views
+def cart(request):
+     context = {}
+     return render(request, 'store/cart.html', context)
 
-urlpatterns = [
-        #Leave as empty string for base url
-	path('', views.store, name="store"),
-	path('cart/', views.cart, name="cart"),
-	path('checkout/', views.checkout, name="checkout"),
-
-]
+def checkout(request):
+      context = {}
+      return render(request, 'store/checkout.html', context)
 
