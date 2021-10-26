@@ -3,6 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="a174841d-06d9-4d17-be24-92e3d55f9433" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/static/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/store/templates/store/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/store/templates/store/cart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/store/templates/store/checkout.html" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/store/templates/store/checkout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/store/templates/store/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/store/templates/store/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/store/templates/store/store.html" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/store/templates/store/store.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +46,7 @@
       <updated>1634914677829</updated>
       <workItem from="1634914684843" duration="2644000" />
       <workItem from="1635007025055" duration="321000" />
+      <workItem from="1635242260348" duration="5890000" />
     </task>
     <servers />
   </component>
@@ -57,5 +63,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
