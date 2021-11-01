@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a174841d-06d9-4d17-be24-92e3d55f9433" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/ecommerce/static/js/cart.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/static/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/store/templates/store/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/store/templates/store/cart.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/store/templates/store/checkout.html" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/store/templates/store/checkout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/static/__init__.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ecommerce/store/templates/store/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/store/templates/store/main.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ecommerce/store/templates/store/store.html" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/store/templates/store/store.html" afterDir="false" />
     </list>
@@ -47,6 +47,9 @@
       <workItem from="1634914684843" duration="2644000" />
       <workItem from="1635007025055" duration="321000" />
       <workItem from="1635242260348" duration="5890000" />
+      <workItem from="1635618612617" duration="670000" />
+      <workItem from="1635644713898" duration="2496000" />
+      <workItem from="1635675258874" duration="8360000" />
     </task>
     <servers />
   </component>
