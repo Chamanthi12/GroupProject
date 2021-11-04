@@ -39,7 +39,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'store.apps.StoreConfig',
-    'account.apps.AccountConfig',
 ]
 
 MIDDLEWARE = [
@@ -128,9 +127,5 @@ STATICFILES_DIRS = [
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
-STATIC_ROOT = os.path.join(BASE_DIR,'assets')
-
-LOGIN_REDIRECT_URL = 'store'
-
-MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
+MEDIA_URL = '/images/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'static/images')
