@@ -3,6 +3,8 @@ from django.shortcuts import render, redirect
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import User, auth
 from django.contrib.auth.decorators import login_required
+from store.models import Customer
+
 
 # Create your views here.
 def indexView(request):
@@ -19,6 +21,10 @@ def registerView(request):
         password = request.POST['password']
         password_repeat = request.POST['password-repeat']
 
+        if(first_name==''or last_name==''or email==''or password==''):
+            messages.info(request, 'Please Fill All Fields')
+            return render(request, 'registration/register.html')
+
         if(password == password_repeat):
             if(User.objects.filter(username= email).exists()):
                 print('User name already taken')
@@ -27,6 +33,8 @@ def registerView(request):
             else:
                 user = User.objects.create_user(username=email, first_name=first_name, last_name=last_name, email=email, password=password)
                 user.save()
+                customer=Customer(user=user,name=first_name,email=email)
+                customer.save()
                 return redirect('login')
         else:
             print('password does not match')
