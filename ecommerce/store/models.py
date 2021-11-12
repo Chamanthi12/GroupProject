@@ -67,10 +67,10 @@ class Order(models.Model):
       orderitems = self.orderitem_set.all()
       for i in orderitems:
         if(i.product == None):
-          if i.cloth.digital == False:
+          if i.cloth.digital == True:
                shipping = True
         else:
-          if i.product.digital == False:
+          if i.product.digital == True:
               shipping = True
 
       return shipping
