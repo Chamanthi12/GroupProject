@@ -58,10 +58,16 @@ def updateItem(request):
     print('productId:', productId)
 
     customer = request.user.customer
-    product = Product.objects.get(id=productId)
+    if(productId[0] == "C"):
+        cloth = Cloth.objects.get(id=productId)
+    else :
+        product = Product.objects.get(id=productId)
     order, created = Order.objects.get_or_create(customer=customer, complete=False)
+    if(productId[0] == "C"):
+        orderItem, created = OrderItem.objects.get_or_create(order=order, cloth=cloth)
+    else :
+         orderItem, created = OrderItem.objects.get_or_create(order=order, product=product)
 
-    orderItem, created = OrderItem.objects.get_or_create(order=order, product=product)
 
     if action == 'add':
         orderItem.quantity = (orderItem.quantity + 1)
@@ -100,3 +106,19 @@ def processOrder(request):
     else:
         print('user is not logged in...')
     return JsonResponse('Payment Complete!',safe=False)
+
+def clothsStore(request):
+
+    if request.user.is_authenticated:
+        customer = request.user.customer
+        order, created = Order.objects.get_or_create(customer=customer, complete=False)
+        items = order.orderitem_set.all()
+        cartItems = order.get_cart_items
+    else:
+        items = []
+        order = {'get_cart_total': 0, 'get_cart_items':0, 'shipping':False}
+        cartItems = order['get_cart_items']
+
+    cloths = Cloth.objects.all()
+    context = {'products':cloths, 'cartItems':cartItems}
+    return render(request, 'store/clothsStore.html', context)
