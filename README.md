@@ -14,6 +14,8 @@ Shop management create  products under various categories. (Eg: Cloths and Shoes
 * Then customers can provide shipping details and continue their transaction with make payments.
 * Finaly customrs can preview their order summary.
 
+<br>NOTE: You should click on "Click-To-Cart" in order to login, register or logout.
+
 ## How to Initialise
 To clone this repository to your machine
 `git clone https://github.com/Chamanthi12/GroupProject.git`
